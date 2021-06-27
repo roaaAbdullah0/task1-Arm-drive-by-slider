@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+
+<html style="font-size: 16px;">
+  <head>
+  <style>
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+body {background-color: #808080;
+font-family: verdana;
+font-size: 160%;}
+h1   {color: blue;}
+p    {color: blue;}
+
+.slidecontainer {
+  width: 30%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<form action="robot.php" method="post">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Robots Are The Future">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>robot</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="robot.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.17.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta property="og:title" content="robot">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+  </head>
+  <body class="u-body">
+    <section class="u-clearfix u-section-1" id="carousel_65a8">
+      <div class="u-expanded-height u-palette-1-base u-shape u-shape-rectangle u-shape-1"></div>
+      <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-container-style u-image u-layout-cell u-left-cell u-size-21 u-image-1" data-image-width="798" data-image-height="562">
+              <div class="u-container-layout u-valign-bottom u-container-layout-1"></div>
+            </div>
+            <div class="u-black u-container-style u-layout-cell u-right-cell u-size-39 u-layout-cell-2">
+              <div class="u-container-layout u-container-layout-2">
+                <div class="u-palette-1-base u-shape u-shape-rectangle u-shape-2"></div>
+				<form action="robot.php" method="post">
+                <h2 class="u-text u-text-1">remote control</h2><br>
+				<label>first engine:</label>
+			
+
+<div class="slidecontainer">
+  <input type="range" min="0" max="100" value="50" class="slider1" id="myRange1">
+  <label>Value: <span id="demo1"></span></label>
+</div>
+
+
+<script>
+var slider1 = document.getElementById("myRange1");
+var output1 = document.getElementById("demo1");
+output1.innerHTML = slider1.value;
+
+slider1.oninput = function() {
+  output1.innerHTML = this.value;
+}
+</script>
+				<label>second engine:</label>
+			
+
+<div class="slidecontainer">
+  <input type="range" min="0" max="100" value="50" class="slide" id="myRang">
+  <label>Value: <span id="dem"></span></label>
+</div>
+
+
+<script>
+var slide = document.getElementById("myRang");
+var outpu = document.getElementById("dem");
+outpu.innerHTML = slide.value;
+
+slide.oninput = function() {
+  outpu.innerHTML = this.value;
+}
+</script>
+
+
+				<label>third engine:</label>
+			
+
+<div class="slidecontainer">
+  <input type="range" min="0" max="100" value="50" class="slider3" id="myRange3">
+  <label>Value: <span id="demo3"></span></label>
+</div>
+
+
+<script>
+var slider3 = document.getElementById("myRange3");
+var output3 = document.getElementById("demo3");
+output3.innerHTML = slider3.value;
+
+slider3.oninput = function() {
+  output3.innerHTML = this.value;
+}
+</script>
+
+				<label>Fourth engine:</label>
+			
+
+<div class="slidecontainer">
+  <input type="range" min="0" max="100" value="50" class="slider4" id="myRange4">
+  <label>Value: <span id="demo4"></span></label>
+</div>
+
+<script>
+var slider4 = document.getElementById("myRange4");
+var output4 = document.getElementById("demo4");
+output4.innerHTML = slider4.value;
+
+slider4.oninput = function() {
+  output4.innerHTML = this.value;
+}
+</script>
+
+				<label>Fifth engine:</label>
+			
+
+<div class="slidecontainer">
+  <input type="range" min="0" max="100" value="50" class="slider5" id="myRange5">
+  <label>Value: <span id="demo5"></span></label>
+</div>
+
+
+<script>
+var slider5 = document.getElementById("myRange5");
+var output5 = document.getElementById("demo5");
+output5.innerHTML = slider5.value;
+
+slider5.oninput = function() {
+  output5.innerHTML = this.value;
+}
+</script>
+
+				<label>Sixth engine:</label>
+			
+
+<div class="slidecontainer">
+  <input type="range" min="0" max="100" value="50" class="slider6" id="myRange6">
+  <label>Value: <span id="demo6"></span></label>
+</div>
+
+
+<script>
+var slider6 = document.getElementById("myRange6");
+var output6 = document.getElementById("demo6");
+output6.innerHTML = slider6.value;
+
+slider6.oninput = function() {
+  output6.innerHTML = this.value;
+}
+</script>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="button">on</button> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  <button class="button">save</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	<style>
+.button {
+  background-color: #3090C7;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+
+   
+  </body>
+</html>
